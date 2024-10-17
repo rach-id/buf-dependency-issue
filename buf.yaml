@@ -1,0 +1,13 @@
+# For details on buf.yaml configuration, visit https://buf.build/docs/configuration/v2/buf-yaml
+version: v2
+
+deps:
+  - buf.build/cosmos/gogo-proto
+  - buf.build/tendermint/tendermint:v0.34.x
+
+lint:
+  use:
+    - STANDARD
+breaking:
+  use:
+    - FILE
